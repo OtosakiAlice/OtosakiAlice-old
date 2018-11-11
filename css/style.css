@@ -1,0 +1,107 @@
+html,body {
+    height: 100%;
+}
+
+html {
+    /* 1 */
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.5;
+    /* 2 */
+    -webkit-text-size-adjust: 100%;
+    /* 3 */
+    background: #fff;
+}
+
+@media (min-width: 1200px) {
+    h1,
+    .uk-h1 {
+      font-size: 8rem;
+    }
+    h2,
+    .uk-h2 {
+      font-size: 2rem;
+    }
+}
+
+.first-content { 
+    height: 100%;
+    position: relative;
+	background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+	background-size: 400% 89%;
+    -webkit-animation: AnimationName 15s ease infinite;
+    -moz-animation: AnimationName 15s ease infinite;
+    animation: AnimationName 15s ease infinite;
+}
+
+.first-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%,-50%);
+    -webkit-transform : translate(-50%,-50%);
+    transform : translate(-50%,-50%);
+    text-align: center;
+    width: 80%;
+}
+
+.menu {
+    padding: 1em 0 0 1em;
+    width: 3.5em;
+    height: 3.5em;
+    background: black;
+}
+
+.second-content {
+    background: #1abc9c;
+    height: 100%;
+    position: relative;
+}
+
+.second-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%,-50%);
+    -webkit-transform : translate(-50%,-50%);
+    transform : translate(-50%,-50%);
+
+    width: 80%;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes AnimationName { 
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+
+h1,
+.uk-h1,
+h2,
+.uk-h2,
+h3,
+.uk-h3,
+h4,
+.uk-h4,
+h5,
+.uk-h5,
+h6,
+.uk-h6 {
+    margin: 0 0 20px 0;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: normal;
+    text-transform: none;
+    color: #ffffff;
+}
